@@ -5,9 +5,13 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd 
 from dash.dependencies import Input,Output
+import numpy as np
+import plotly.graph_objs as go
+import plotly.io as pio
+import plotly.figure_factory as ff
 
 df = pd.read_csv ('Dashboard_App\Data\german_credit.csv')
-print(df)
+#print(df)
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
