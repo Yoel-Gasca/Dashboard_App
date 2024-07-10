@@ -89,6 +89,7 @@ body {
     background-color: #F2F2F2;
     margin: 20px;
     padding: 15px;
+    width: 1800px;
     position: relative;
     box-shadow: 4px 4px 4px 4px lightgrey;
     overflow-y: auto
@@ -123,7 +124,7 @@ body {
 }
 
 .flex-display {
-    display: flex;
+    display:flexbox;
 }
 
 #mainContainer {
