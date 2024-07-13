@@ -4,7 +4,6 @@ Este es el proceso para desarrollar un dasboard dinámico e interactivo usando l
 
 ## Tecnologías utilizadas para este proyecto:<br/>
 - Libreria de Python utilizadas: Pandas, Numpy, Plotly y Dash<br>
-- Entorno de desarrollo: Dash_App <br/>
 - Plataforma de la app: Web <br/>
 - Lenguaje de programación utilizado: Python <br/> <br/>
 
