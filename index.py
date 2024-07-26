@@ -1,3 +1,4 @@
+# Importacion las librerias necesarias para construir una aplicación de Dash
 import dash
 import dash_core_components as dcc 
 import dash_html_components as html
@@ -10,11 +11,14 @@ import plotly.graph_objs as go
 import plotly.io as pio
 import plotly.figure_factory as ff
 
+# Cargar el conjunto de datos en un DataFrame de pandas
 df = pd.read_csv ('Dashboard_App\Data\german_credit.csv')
 #print(df)
 
+# Inicialización de la Aplicación
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+# Layout de la Aplicación
 app.layout = html.Div([
     
     html.Div([
@@ -53,6 +57,7 @@ app.layout = html.Div([
 
 ], id='mainContainer', style={'display':'flex', 'flex-direction':'column'})
 
+# Callbacks
 @app.callback(
     Output('my_graph', 'figure'),
     [Input('credit_history', 'value')]
@@ -107,5 +112,6 @@ def update_graph_pie(value):
 
     return fig2
 
+#  Ejecutar la Aplicación
 if __name__ == '__main__':
     app.run_server(debug=True)
